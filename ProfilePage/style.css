@@ -1,0 +1,41 @@
+/* style.css for ProfilePage */
+
+.center{
+    text-align: center;
+    margin: 0px auto;
+}
+
+.negative-top-margin{
+    margin-top: -100px;
+}
+
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.profile-card{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+.width300{
+    width: 300px;
+}
+
+.profile-card-image{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid black;
+}
+.profile-card-likes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
