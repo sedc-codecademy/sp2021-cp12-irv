@@ -1,0 +1,41 @@
+/* style.css for Artists Page */
+.horizontal-card{
+    width: 75%;
+    margin: 0px auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-top: 10px;
+
+    background-color: rgb(212, 212, 212);
+}
+
+.hor-card-info{
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hor-card-images{
+    width: 70%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;    
+    overflow:hidden;
+}
+
+.hor-card-image-element{
+    margin: 10px;
+}
+
+.profile-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
