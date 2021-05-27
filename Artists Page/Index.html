@@ -6,60 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Artists Page</title>
 </head>
 
-<body>
-    <div class="profile-buttons">
-        <button>Show as cards</button>
-        <button>Show items as boxes</button>
+
+
+<body id="artistsPageBody">
+    <div id="artistsPageDiv">
+        <div class="profile-buttons">
+            <a href="../Homepage.html" id="back">Back</a>
+        </div>
+
+        <div id="artistCardsContainer">
+
+        </div>
     </div>
 
-    <!--This is a sample of a card, this card is to be added through Javascript's append element  -->
-    <a href="../ProfilePage/Index.html">
-        <div class="horizontal-card center">
-            <div class="hor-card-info">
-                <h2>Artist name: 1 </h2>
-                <h3>Total views: 234</h3>
-                <h3>Total likes: 44 </h3>
-                <h3>Number of paintings: 3</h3>
-            </div>
-            <div class="hor-card-images">
-                <div class="hor-card-image-element">
-                    <img src="Images/Image1.jpg" height="300px" alt="">
-                </div>
-                <div class="hor-card-image-element">
-                    <img src="Images/Image2.jpg" height="300px" alt="">
-                </div>
-                <div class="hor-card-image-element">
-                    <img src="Images/Image3.jpg" height="300px" alt="">
-                </div>
-            </div>
-        </div>
-    </a>
-
-    <a href="../ProfilePage/Index.html">
-        <div class="horizontal-card">
-            <div class="hor-card-info">
-                <h2>Artist name: 2 </h2>
-                <h3>Total views: 23423</h3>
-                <h3>Total likes: 3324 </h3>
-                <h3>Number of paintings: 3</h3>
-            </div>
-            <div class="hor-card-images">
-                <div class="hor-card-image-element">
-                    <img src="Images/paint1.jpg" height="300px" alt="">
-                </div class="hor-card-image-element">
-                <div class="hor-card-image-element">
-                    <img src="Images/paint2.jpg" height="300px" alt="">
-                </div>
-                <div class="hor-card-image-element">
-                    <img src="Images/paint3.png" height="300px" alt="">
-                </div>
-            </div>
-        </div>
-    </a>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
