@@ -6,6 +6,10 @@ const popUpSignUp = document.getElementById("popup-window");
 const linkToSignUp = document.getElementById("openSignInPanel")
 const socialMediaBtns = document.getElementsByClassName("social-media-logo");
 
+const userNameInput = document.getElementById('username');
+const passwordInput = document.getElementById('password');
+
+
 console.log(popUpSignUp);
 
 const togglePopUp = toggle => {
@@ -32,4 +36,16 @@ linkToSignUp.addEventListener("click", function(){
 
 signUpBtn.addEventListener("click", function(){
     togglePopUp(false);
-})
+});
+
+
+//admin test sign in test
+signInBtn.addEventListener('click',()=>{       
+    if(userNameInput.value == "admin" && passwordInput.value == "admin"){
+        location.href = "../../Admin Panel/AdminPanel.html"; 
+    }
+
+    if(userNameInput.value == "user" && passwordInput.value == "user"){
+        location.href = "../../ProfilePage/index.html"; 
+    }
+});

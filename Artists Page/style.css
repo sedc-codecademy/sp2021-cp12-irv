@@ -1,6 +1,30 @@
 /* style.css for Artists Page */
+*{
+  font-family: "Roboto", sans-serif;
+}
+
+#artistsPageBody{
+   background-color: black;
+   display: flex;
+   flex-wrap: wrap;     
+   
+   background-image: url(Background/backgroundImage2.jpg);
+   background-color: black;
+   background-size:100%;  
+   background-attachment: fixed;
+
+
+}
+
+#artistsPageDiv{
+    width: 1400px;
+    margin: 0px auto;
+    background-color: rgba(0, 0, 0, 0.616);
+
+}
+
 .horizontal-card{
-    width: 75%;
+    width: 80%;
     margin: 0px auto;
 
     display: flex;
@@ -8,8 +32,13 @@
     justify-content: space-around;
 
     margin-top: 10px;
+    border-radius: 20px;
 
-    background-color: rgb(212, 212, 212);
+    padding-left: 20px;
+    padding-right: 20px;
+
+    color: whitesmoke;
+    background-color: rgba(212, 212, 212, 0.308);
 }
 
 .hor-card-info{
@@ -24,18 +53,38 @@
 .hor-card-images{
     width: 70%;
     height: 300px;
+
     display: flex;
     flex-wrap: wrap;    
     overflow:hidden;
+
+    display: flex;
+    flex-wrap: wrap; 
+
+    align-items: center;
 }
 
 .hor-card-image-element{
     margin: 10px;
 }
 
+
+
 .profile-buttons{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 10px;
+}
+
+
+
+#back{
+    width: 100px;
+
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
 }
