@@ -15,7 +15,7 @@ body {
   background-position: center;
   height: 100vh;
 }
-
+/* 
 header {
   background-color: rgba(0, 0, 0, 0.13);
   height: 10vh;
@@ -58,6 +58,7 @@ ul li a:hover::after {
   width: 100px;
   height: auto;
 }
+*/
 
 .text-box {
   width: 90%;
@@ -73,4 +74,4 @@ ul li a:hover::after {
 }
 .text-box p {
   margin: 20px 0 50px;
-}
+} 

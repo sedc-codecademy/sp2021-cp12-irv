@@ -1,48 +1,59 @@
 /* style.css for Artists Page */
-*{
-  font-family: "Roboto", sans-serif;
+
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
-#artistsPageBody{
-   background-color: black;
-   display: flex;
-   flex-wrap: wrap;     
-   
-   background-image: url(Background/backgroundImage2.jpg);
-   background-color: black;
-   background-size:100%;  
-   background-attachment: fixed;
 
+/*/////////////////////*/
 
+/*/// ARTIST CARDS /// */
+
+/*/////////////////////*/
+
+#artistsPageBody {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(Background/backgroundImage2.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
-#artistsPageDiv{
+#artistsPageDiv {
     width: 1400px;
     margin: 0px auto;
+    margin-top: 100px;
     background-color: rgba(0, 0, 0, 0.616);
-
 }
 
-.horizontal-card{
+#back {
+    width: 100px;
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+}
+
+.horizontal-card {
     width: 80%;
     margin: 0px auto;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
     margin-top: 10px;
     border-radius: 20px;
-
     padding-left: 20px;
     padding-right: 20px;
-
     color: whitesmoke;
     background-color: rgba(212, 212, 212, 0.308);
 }
 
-.hor-card-info{
-
+.hor-card-info {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -50,41 +61,35 @@
     flex-wrap: wrap;
 }
 
-.hor-card-images{
+.hor-card-images {
     width: 70%;
     height: 300px;
-
-    display: flex;
-    flex-wrap: wrap;    
-    overflow:hidden;
-
-    display: flex;
-    flex-wrap: wrap; 
-
-    align-items: center;
-}
-
-.hor-card-image-element{
-    margin: 10px;
-}
-
-
-
-.profile-buttons{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    justify-content: space-around;
+    align-items: center;
+
+    box-sizing: border-box;
 }
 
+.hor-card-image-element {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;    
 
+    align-items: center;
+    justify-content: center;
 
-#back{
-    width: 100px;
+    width: 20%;
+    
+    padding: 15px;
+    border-radius: 25px;
 
-    color: whitesmoke;
-    text-decoration: none;
-    background-color: whitesmoke;
-    color: black;
-    text-align: center;
+    overflow: hidden;
+    margin: 10px;
 }
