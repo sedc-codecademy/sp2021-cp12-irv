@@ -1,91 +1,110 @@
 /* style.css for ProfilePage */
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
-body{
+body {
     background-color: black;
-   
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,0.7791491596638656) 0%, rgba(106,106,106,1) 0%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.7791491596638656) 0%, rgba(106, 106, 106, 1) 0%, rgba(0, 0, 0, 1) 100%);
     background-size: 100%;
     background-attachment: fixed;
-    color:white;
+    color: white;
 }
 
-.custom-a-tag{
+.custom-a-tag {
     text-decoration: none;
     color: white;
 }
 
-
-.center{
+.center {
     text-align: center;
     margin: 0px auto;
 }
 
-.negative-top-margin{
+.negative-top-margin {
     margin-top: -100px;
 }
 
-.flex-wrap{
+.flex-wrap {
     display: flex;
     flex-wrap: wrap;
 }
 
-.profile-card{
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 0px auto;
-    /* border: 2px solid black; */
-}
-
-.width300{
+.width300 {
     width: 300px;
 }
 
-.profile-card-image{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-    /* border: 2px solid black; */
-}
-.profile-card-likes{
+
+
+.profile-card-likes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.round{
+.round {
     border-radius: 1000px;
     border: white solid 5px;
 }
 
-.round-corners{
+.round-corners {
     border-radius: 10px;
-
 }
 
-.font-size-30{
+.font-size-30 {
     font-size: 30px;
 }
 
-.font-size-20{
+.font-size-20 {
     font-size: 20px;
 }
 
-.no-margin{
+.no-margin {
     margin: 0;
 }
 
-.min-margin{
+.min-margin {
     margin: 2px;
 }
 
-.bold{
+.bold {
     font-weight: bold;
 }
 
+#profileCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profile-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 100px;
+    /* border: 2px solid black; */
+}
+
+.profile-card-image {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px auto;
+
+    /* border: 2px solid black; */
+}
+
+.profile-card-info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+}
