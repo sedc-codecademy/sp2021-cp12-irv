@@ -7,7 +7,40 @@ class Faker {
     }
 };
 
-class Homepage {
+
+
+
+class Image {
+    constructor(url, artistName, pictureName) {
+
+        this.timeStamp = Date.now();
+        this.dateAdded = new Date(this.timeStamp);
+
+        this.url = url;
+
+        this.artistName = artistName;
+        this.name = pictureName;
+
+        this.likes = 0;
+        this.views = 0;
+
+        this.id = `${Math.floor(Math.random() * 1000)}/${this.name}/${this.timeStamp}`;
+    }
+}
+
+class Artist{
+    constructor(firstName, lastName, password){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.password = password;
+
+        this.images = [];
+    }
+}
+
+
+
+class Document {
     static artistCardsContainer = document.getElementById('artistCardsContainer');
     static artistCards = '';
 
@@ -20,7 +53,7 @@ class Homepage {
             this.artistCardsContainer.innerHTML += `
                 <div class="artistCard horizontal-card center">
                     <div class="hor-card-info">
-                        <h2>Artist name: ${user.firstname} ${user.lastname}</h2>
+                        <h2>${user.firstname} ${user.lastname}</h2>
                         <h3>Total views: ${Math.floor(Math.random() * 10000)}</h3>
                         <h3>Total likes: ${Math.floor(Math.random() * 1000)} </h3>
                         <h3>Number of paintings: ${Math.floor(Math.random() * 10) + 10}</h3>
@@ -32,9 +65,11 @@ class Homepage {
                         </div>    
                         <div class="hor-card-image-element">
                             <img src="Images/Image${Math.ceil(Math.random() * 12)}.jpg" height="200px" alt="">
+
                         </div>    
                         <div class="hor-card-image-element">
                             <img src="Images/Image${Math.ceil(Math.random() * 12)}.jpg" height="200px" alt="">
+
                         </div>    
                           <div class="hor-card-image-element">
                             <img src="Images/Image${Math.ceil(Math.random() * 12)}.jpg" height="200px" alt="">
@@ -44,7 +79,7 @@ class Homepage {
                      `
         });
 
-        //add event listener for the cards after resolving
+        //add event listeners for the cards after resolving
 
         this.artistCards = document.getElementsByClassName('artistCard');
 
@@ -54,24 +89,10 @@ class Homepage {
             })
         }
     }
-
-    // static selectArtist() {
-    //     setTimeout(() => {
-    //         console.log(this.artistCards);
-
-    //         for(let i = 0; i < this.artistCards.length; i++){
-    //             this.artistCards[i].addEventListener('click',()=>{
-    //                 console.log('geh');
-    //             })
-    //         }
-
-    //         return this.artistCards;
-    //     },1000)
-    // };
 };
 
 
 
-Homepage.populateRandomArtists();
+Document.populateRandomArtists();
 // Homepage.selectArtist();
 

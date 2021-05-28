@@ -1,0 +1,58 @@
+/* navbar.css */
+
+/* import Roboto font */
+
+/* import fonts from fonts.css file in GeneralStyle, or just use this one */
+
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+#navItemsContainer {
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.137);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#navLogoContainer {
+    width: 20%;
+    box-sizing: border-box;
+}
+
+#navOptionsContainer {
+    width: 80%;
+    padding-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.nav-options-container-item {
+    padding: 15px;
+}
+
+.custom-underline {
+    /* UNCOMMENT THIS TO MAKE THE UNDERLINE DRAW MORE TO THE LEFT */
+    /* padding-left: 15px; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgba(253, 253, 253, 0.938);
+}
+
+.custom-underline::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.custom-underline:hover::after {
+    width: 100%;
+}

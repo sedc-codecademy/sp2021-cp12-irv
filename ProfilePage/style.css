@@ -1,5 +1,25 @@
 /* style.css for ProfilePage */
 
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+   
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,0.7791491596638656) 0%, rgba(106,106,106,1) 0%, rgba(0,0,0,1) 100%);
+    background-size: 100%;
+    background-attachment: fixed;
+    color:white;
+}
+
+.custom-a-tag{
+    text-decoration: none;
+    color: white;
+}
+
+
 .center{
     text-align: center;
     margin: 0px auto;
@@ -9,18 +29,17 @@
     margin-top: -100px;
 }
 
-
 .flex-wrap{
     display: flex;
     flex-wrap: wrap;
 }
 
-
-
 .profile-card{
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid black;
+    width: 80%;
+    margin: 0px auto;
+    /* border: 2px solid black; */
 }
 
 .width300{
@@ -32,10 +51,41 @@
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .profile-card-likes{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.round{
+    border-radius: 1000px;
+    border: white solid 5px;
+}
+
+.round-corners{
+    border-radius: 10px;
+
+}
+
+.font-size-30{
+    font-size: 30px;
+}
+
+.font-size-20{
+    font-size: 20px;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.min-margin{
+    margin: 2px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
