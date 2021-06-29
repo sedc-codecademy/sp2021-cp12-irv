@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+body {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-image: url(Homepageimages/galleries-icc.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+/* 
+header {
+  background-color: rgba(0, 0, 0, 0.13);
+  height: 10vh;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 30px;
+  margin-right: 130px;
+  font-size: 22px;
+}
+
+ul li {
+  display: inline-block;
+}
+ul li a {
+  text-emphasis: none;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 5px 20px;
+}
+ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #ffff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+ul li a:hover::after {
+  width: 100%;
+}
+.logo img {
+  float: left;
+  width: 100px;
+  height: auto;
+}
+*/
+
+.text-box {
+  width: 90%;
+  color: #ffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 50px;
+}
+.text-box p {
+  margin: 20px 0 50px;
+} 

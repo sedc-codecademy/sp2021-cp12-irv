@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/css/landing-page.css" rel="stylesheet" type="text/css" />  
+
+    <title>PVT Landing Page</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="logo-container">
+            <div class="logo">
+                <img src="src/img/5552.png" alt="voting-tool-logo" id="voting-tool-logo">
+            </div>
+        </div>
+
+        <div class="sign-in-panel">
+            <form action="" method="POST" class="sign-in-form"> 
+                    <input type="text" name="username" id="username" class="signin-input" placeholder="Username" required />
+                    <input type="password" name="password" id="password" class="signin-input" placeholder="Password" required />   
+                    <button type="button" class="btn btn-dark signin-btn" id="signInBtn">Sign In</button>  
+                    <p class="text-over-link">Don't have an account yet?</p>
+                    <a href="#" class="register-link" id="openSignInPanel">Register now</a>  
+            </form> 
+        </div>
+    </div>
+
+    <div id="page-mask"></div>
+    
+    <div id="popup-window">
+        <div class="signup-flex-wrapper">
+            
+            <div class="signup-panel">
+                <input type="email" name="email" id="email" class="signup-input" placeholder="Email" required />
+                <input type="text" name="username-signup" id="username-signup" class="signup-input" placeholder="Username" required />
+                <input type="password" name="password-signup" id="password-signup" class="signup-input" placeholder="Password" required />   
+                <p class='signup-par radio'>Signing up as:</p>
+                <div>
+                    <input type="radio" name="role" id="user" class="user" />
+                    <label for="user" class="user radio">User</label>
+                    <input type="radio" name="role" id="artist" class="artist" />
+                    <label for="artist" class="artist radio">Artist</label>
+                </div>
+                <button type="button" class="btn btn-dark signup-btn" id="signUpBtn">Sign Up</button>  
+            </div>
+            
+            <div class="signup-auto">
+                <div class="social-media-btn">  
+                    OR
+
+                </div>
+
+                <div class="social-media-btn">  
+                    <input type="image" class="social-media-logo" src="src/img/clipart1445555.png" />
+                    Sign up with Facebook
+                </div>
+                <div class="social-media-btn">  
+                    <input type="image" class="social-media-logo" src="src/img/clipart2661594.png" />
+                    Sign up with Instagram
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+        
+
+
+
+
+    <script src="../GeneralScript/navbar.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="src/landing-page.js"></script>
+</body>
+</html>

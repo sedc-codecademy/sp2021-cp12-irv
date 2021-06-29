@@ -1,0 +1,55 @@
+/* navbar.css */
+
+
+#navItemsContainer {
+    width: 100vw;
+    
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.137);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#navLogoContainer {
+    padding-left: 5%;
+    width: 20%;
+}
+
+#navOptionsContainer {
+    width: 80%;
+    padding-right: 5%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-options-container-item {
+    padding: 10px;
+}
+
+.custom-underline {
+    /* text-emphasis: none; */
+    font-family: "Roboto", sans-serif;
+    
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.custom-underline::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.custom-underline:hover::after {
+    width: 100%;
+}

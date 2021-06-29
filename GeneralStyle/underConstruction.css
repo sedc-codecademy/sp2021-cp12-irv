@@ -1,0 +1,31 @@
+body{  
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../HomepageImages/contemporary-southwestern-home-scottsdale-arizona-christies-international-real-estate.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+#underConstructionElementsContainer{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 99vw;
+
+    flex-direction: column;
+    padding-top: 25%;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+}
+
+.UCElement{
+    margin: 0px auto;
+}
+

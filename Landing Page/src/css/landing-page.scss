@@ -1,0 +1,355 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body, *, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body {
+    background-image: url(../img/robert-keane-rlbG0p_nQOU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+$small-screen: 768px;
+$large-screen: 1300px;
+
+@mixin small-screen-size {
+    @media  (min-width: #{$small-screen}) and (max-width: #{$large-screen - 1px}) {
+        @content;
+    }
+}
+
+@mixin large-screen-size {
+    @media  (min-width: #{$large-screen}) {
+        @content;
+    }
+}
+
+// Smisli kako da gi iskoristis, isto razmisli kolku breakpoints voopsto kje ti trebaat so ogled na toa deka e prilicno ednostaven landing page-ot
+// @include breakpoint($tablet);
+// @include breakpoint($small-screen);
+// @include breakpoint($large-screen);
+
+
+// TO DO:
+// Pomisli sto tekstce bi mozelo da se dodade, kako nekoja dodatna informacija okolu toa sto e stranava vsusnost, kao info ako si artist go ahead napraj si profil i stavaj sliki za si pomognes da ti gi otkupime ako imaat dobar odziv, a ako si juzer, poveli uzivaj vo galeriite na nasite artisti i glasaj za najubavite, i kupi si nekoja za na dzid (moze i link da staime do sestrinskata aplikacija za na dzid so mozat da vidat kako im stoi)
+// Dizajnot napravi go prvo za mobilen, posle za tablet i desktop (vidi eventualno za mobilen landscape varijanta isto i za tablet)
+// Sign in / Sign up napraj gi, pa so js napravi da se menuvaat dvete karticki vo zavisnost od toa sto izbral juzer
+
+.wrapper{
+    // position: relative;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    @include small-screen-size{
+        flex-direction: row;
+
+    };
+    @include large-screen-size{
+        flex-direction: row;
+    }
+}
+
+
+.logo-container {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    @include small-screen-size{
+        width: 60%;
+        height: 100%;
+    };
+    @include large-screen-size{
+        width: 60%;
+        height: 100%;
+    }
+}
+
+#voting-tool-logo{
+    width: 100%;
+    margin: auto;
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sign-in-panel{
+    width: 100%;
+    padding: 0%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 60%;
+    @include small-screen-size{
+        height: 100%;
+        width: 40%;
+    };
+    @include large-screen-size{
+        height: 100%;
+        width: 40%;
+    };
+}
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 95%;
+    width: 90%;
+    padding: 1rem;
+    margin: auto;
+    background-color: rgba(32, 32, 32, 0.7);
+    border-radius: 15px;
+    @include small-screen-size{
+        height: 60%;
+        width: 70%;
+        padding: 2.5rem;
+    }
+    @include large-screen-size{
+        height: 50%;
+        width: 70%;
+        padding: 2.5rem;
+    };
+}
+
+.signin-input, .signin-btn, .signup-btn, .register-link, .text-over-link{
+    border-radius: 15px;
+    text-align: center;
+    border: none;
+    height: 35px;
+    font-size: 0.85rem;
+    width: 90%;
+    @include small-screen-size{
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    @include large-screen-size{
+        height: 50px;
+        font-size: 1.2rem;
+    };
+}
+
+.signin-btn, .signup-btn{
+    width: 90%;
+    @include small-screen-size{
+    width: 70%;
+        
+    }
+    @include large-screen-size{
+    width: 60%;
+       
+    };
+}
+
+.text-over-link{
+    color: #CFB55E;
+    height: 5px;
+    font-size: 0.9rem;
+    @include large-screen-size{
+        font-size: 1.2rem;
+    };   
+}
+
+.register-link {
+    color: white;
+    width: 40%;
+    height: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    @include large-screen-size{
+        font-size: 1.2rem;
+    };  
+}
+
+.register-link:link {
+    text-decoration: none;
+}
+  
+.register-link:visited {
+    text-decoration: none;
+}
+  
+.register-link:hover {
+    text-decoration: none;
+}
+  
+.register-link:active {
+    text-decoration: none;
+}
+
+#page-mask {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+}
+  
+#popup-window {
+    position: fixed;
+    left: 20%;
+    right: 20%;
+    bottom: 15%;
+    top: 15%;
+    background-image: linear-gradient(to  right, rgb(27, 27, 27), rgb(87, 87, 87));
+    color: #fff;
+    border: solid 2px gray;
+    border-radius: 12px;
+    border: none;
+    display: none;
+    @include large-screen-size{
+        left: 30%;
+        right: 30%;
+    };  
+}
+    
+    .signup-flex-wrapper{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-items: center;
+        @include small-screen-size{
+            flex-direction: row;
+        };  
+        @include large-screen-size{
+            flex-direction: row;
+        };  
+    }
+
+    .signup-input{
+        background-color: initial;
+        border: none;
+        border-bottom: 1px solid #CFB55E;
+        border-radius: initial;
+        text-align: center;
+        font-size: 0.9rem;
+        color: white;
+        width: 50%;
+        height: 30px;
+        margin: 1rem 0 0 0;
+        @include small-screen-size{
+            width: 70%;
+            font-size: 1rem;
+        };  
+        @include large-screen-size{
+            width: 70%;
+            font-size: 1.1rem;
+        };  
+    }
+
+    .user, .artist {
+        display: inline;
+    }
+
+    .signup-par{
+        margin-top: 1rem;;
+    }
+
+    .radio {
+        font-size: 0.9rem;
+        color:rgb(157, 161, 172);
+
+        @include small-screen-size{
+            font-size: 1rem;
+        };  
+        @include large-screen-size{
+            font-size: 1.1rem;
+        };  
+    }
+    
+    .signup-btn{
+        // color: #CFB55E;
+        width: 50%;
+        height: 40px;
+        margin-top: 1rem;
+        @include small-screen-size{
+            width: 40%;
+            font-size: 0.9rem;
+        };  
+        @include large-screen-size{
+            width: 40%;
+            font-size: 1.1rem;
+        };  
+    }
+
+    .signup-panel{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 0;
+        // background-color:yellow;
+        @include small-screen-size{
+
+            width: 50%;
+    
+        };  
+        @include large-screen-size{
+            width: 50%;
+            font-size: 1.1rem;
+        };  
+    }
+
+    .signup-auto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        // background-color: fuchsia;  
+        @include small-screen-size{
+            width: 50%;
+        };  
+        @include large-screen-size{
+            width: 50%;
+            font-size: 1.1rem;
+        };  
+    }
+
+    .social-media-btn{
+        height: 30%;
+        width: 100%;
+        text-align: center;
+        color: rgb(161, 161, 161);
+        padding: 1rem;
+        text-align: center;
+        font-size: 0.9rem;
+        @include small-screen-size{
+            height: 100%;
+            margin-right: 3rem;
+            font-size: 1rem;
+        };  
+        @include large-screen-size{
+            height: 100%;
+            margin-right: 4rem;
+            font-size: 1.1rem;
+        };  
+    }
+    .social-media-logo{
+        vertical-align: middle;  
+        width: 30px;  
+    }
+  
