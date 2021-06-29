@@ -6,6 +6,10 @@ const popUpSignUp = document.getElementById("popup-window");
 const linkToSignUp = document.getElementById("openSignInPanel")
 const socialMediaBtns = document.getElementsByClassName("social-media-logo");
 
+const userNameInput = document.getElementById('username');
+const passwordInput = document.getElementById('password');
+
+
 // Dummy artist database
 
 class Artist{
@@ -164,3 +168,34 @@ linkToSignUp.addEventListener("click", function(){
 signUpBtn.addEventListener("click", function(){
     togglePopUp(false);
 })
+
+///////////////////
+
+
+// Get elements
+
+//admin test sign in test
+signInBtn.addEventListener('click',()=>{       
+    if(sessionStorage.getItem('loggedIn') == 'true'){
+        alert('Please logout first');
+        return;
+    }
+
+    if(userNameInput.value == "admin" && passwordInput.value == "admin"){
+        sessionStorage.setItem('loggedIn', 'true');
+        sessionStorage.setItem('credentials', 'admin');
+        location.href = "../../Admin Panel/AdminPanel.html"; 
+    }
+
+    if(userNameInput.value == "user" && passwordInput.value == "user"){
+        sessionStorage.setItem('loggedIn', 'true');
+        sessionStorage.setItem('credentials', 'user');
+        location.href = "../../ProfilePage/index.html"; 
+    }
+
+    if(userNameInput.value == "artist" && passwordInput.value == "artist"){
+        sessionStorage.setItem('loggedIn', 'true');
+        sessionStorage.setItem('credentials', 'artist');
+        location.href = "../../ArtistProfilePage/index.html"; 
+    }
+});

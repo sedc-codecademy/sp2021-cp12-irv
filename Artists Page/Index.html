@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="../GeneralStyle/navbar.css">
     <link rel="stylesheet" href="../GeneralStyle/fonts.css">
+    <script src="../GeneralScript/loginGuard.js"></script>
    
     <title>Artists Page</title>
 </head>
@@ -20,20 +21,21 @@
         <div id="navItemsContainer">
             <div id="navLogoContainer">
                 <a href="../Homepage.html">
-                    <img src="Background/logo.png" width="100px" alt="logo of in room preview">
+                    <img src="../HomepageImages/NEW-logo-InRoomPreview-white.png" width="100px"
+                        alt="logo of in room preview">
                 </a>
             </div>
             <div id="navOptionsContainer">
                 <div id="home" class="nav-options-container-item">
                     <a href="../Homepage.html" class="custom-underline">Home</a>
                 </div>
-                <div id="home" class="nav-options-container-item">
-                    <a href="../ProfilePage/Index.html" class="custom-underline">Profile</a>
+                <div id="profileDiv" class="nav-options-container-item">
+                    <a href="#" id="profileButton" class="custom-underline">Profile</a>
                 </div>
                 <div id="artists" class="nav-options-container-item">
-                    <a href="./Index.html" class="custom-underline">Artists</a>
+                    <a href="../Artists Page/Index.html" class="custom-underline">Artists</a>
                 </div>
-                <div id="joinUs" class="nav-options-container-item">
+                <div id="joinUsDiv" class="nav-options-container-item">
                     <a href="../Landing Page/index.html" class="custom-underline">Join us</a>
                 </div>
                 <div id="contact" class="nav-options-container-item">
@@ -44,6 +46,9 @@
                 </div>
                 <div id="blog" class="nav-options-container-item">
                     <a href="../Blog Page/index.html" class="custom-underline">Blog</a>
+                </div>
+                <div id="logOutDiv" class="nav-options-container-item">
+                    <a href="#" id="logOutButton" class="custom-underline">Log Out</a>
                 </div>
             </div>
         </div>
@@ -57,6 +62,8 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="../GeneralScript/navbar.js"></script>
+
 </body>
 
 </html>
