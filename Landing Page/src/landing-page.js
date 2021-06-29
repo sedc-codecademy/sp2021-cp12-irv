@@ -6,7 +6,6 @@ const popUpSignUp = document.getElementById("popup-window");
 const linkToSignUp = document.getElementById("openSignInPanel")
 const socialMediaBtns = document.getElementsByClassName("social-media-logo");
 
-
 const userNameInput = document.getElementById('username');
 const passwordInput = document.getElementById('password');
 
@@ -197,7 +196,6 @@ signInBtn.addEventListener('click',()=>{
     if(userNameInput.value == "artist" && passwordInput.value == "artist"){
         sessionStorage.setItem('loggedIn', 'true');
         sessionStorage.setItem('credentials', 'artist');
-
         location.href = "../../ArtistProfilePage/index.html"; 
     }
 });
