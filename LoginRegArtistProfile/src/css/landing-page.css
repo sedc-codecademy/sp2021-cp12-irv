@@ -123,9 +123,9 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 80%;
-  width: 70%;
-  padding: 2.5rem;
+  height: 95%;
+  width: 90%;
+  padding: 1rem;
   margin: auto;
   background-color: rgba(32, 32, 32, 0.7);
   border-radius: 15px;
@@ -134,12 +134,16 @@ body {
 @media (min-width: 768px) and (max-width: 1299px) {
   .sign-in-form {
     height: 60%;
+    width: 70%;
+    padding: 2.5rem;
   }
 }
 
 @media (min-width: 1300px) {
   .sign-in-form {
     height: 50%;
+    width: 70%;
+    padding: 2.5rem;
   }
 }
 
@@ -149,7 +153,7 @@ body {
   border: none;
   height: 35px;
   font-size: 0.85rem;
-  width: 70%;
+  width: 90%;
 }
 
 @media (min-width: 768px) and (max-width: 1299px) {
@@ -167,7 +171,19 @@ body {
 }
 
 .signin-btn, .signup-btn {
-  width: 50%;
+  width: 90%;
+}
+
+@media (min-width: 768px) and (max-width: 1299px) {
+  .signin-btn, .signup-btn {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .signin-btn, .signup-btn {
+    width: 60%;
+  }
 }
 
 .text-over-link {
@@ -244,7 +260,7 @@ body {
   }
 }
 
-#popup-window .signup-flex-wrapper {
+.signup-flex-wrapper {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,7 +278,7 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1299px) {
-  #popup-window .signup-flex-wrapper {
+  .signup-flex-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -271,7 +287,7 @@ body {
 }
 
 @media (min-width: 1300px) {
-  #popup-window .signup-flex-wrapper {
+  .signup-flex-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -279,7 +295,7 @@ body {
   }
 }
 
-#popup-window .signup-input {
+.signup-input {
   background-color: initial;
   border: none;
   border-bottom: 1px solid #CFB55E;
@@ -293,65 +309,65 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1299px) {
-  #popup-window .signup-input {
+  .signup-input {
     width: 70%;
     font-size: 1rem;
   }
 }
 
 @media (min-width: 1300px) {
-  #popup-window .signup-input {
+  .signup-input {
     width: 70%;
     font-size: 1.1rem;
   }
 }
 
-#popup-window .user, #popup-window .artist {
+.user, .artist {
   display: inline;
 }
 
-#popup-window .signup-par {
+.signup-par {
   margin-top: 1rem;
 }
 
-#popup-window .radio {
+.radio {
   font-size: 0.9rem;
   color: #9da1ac;
 }
 
 @media (min-width: 768px) and (max-width: 1299px) {
-  #popup-window .radio {
+  .radio {
     font-size: 1rem;
   }
 }
 
 @media (min-width: 1300px) {
-  #popup-window .radio {
+  .radio {
     font-size: 1.1rem;
   }
 }
 
-#popup-window .signup-btn {
+.signup-btn {
   width: 50%;
   height: 40px;
   margin-top: 1rem;
 }
 
 @media (min-width: 768px) and (max-width: 1299px) {
-  #popup-window .signup-btn {
+  .signup-btn {
     width: 40%;
     font-size: 0.9rem;
   }
 }
 
 @media (min-width: 1300px) {
-  #popup-window .signup-btn {
+  .signup-btn {
     width: 40%;
     font-size: 1.1rem;
   }
 }
 
-#popup-window .signup-panel {
+.signup-panel {
   height: 50%;
   width: 100%;
   display: -webkit-box;
@@ -370,19 +386,19 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1299px) {
-  #popup-window .signup-panel {
+  .signup-panel {
     width: 50%;
   }
 }
 
 @media (min-width: 1300px) {
-  #popup-window .signup-panel {
+  .signup-panel {
     width: 50%;
     font-size: 1.1rem;
   }
 }
 
-#popup-window .signup-auto {
+.signup-auto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,19 +414,19 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1299px) {
-  #popup-window .signup-auto {
+  .signup-auto {
     width: 50%;
   }
 }
 
 @media (min-width: 1300px) {
-  #popup-window .signup-auto {
+  .signup-auto {
     width: 50%;
     font-size: 1.1rem;
   }
 }
 
-#popup-window .social-media-btn {
+.social-media-btn {
   height: 30%;
   width: 100%;
   text-align: center;
@@ -421,7 +437,7 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1299px) {
-  #popup-window .social-media-btn {
+  .social-media-btn {
     height: 100%;
     margin-right: 3rem;
     font-size: 1rem;
@@ -429,15 +445,15 @@ body {
 }
 
 @media (min-width: 1300px) {
-  #popup-window .social-media-btn {
+  .social-media-btn {
     height: 100%;
     margin-right: 4rem;
     font-size: 1.1rem;
   }
 }
 
-#popup-window .social-media-logo {
+.social-media-logo {
   vertical-align: middle;
   width: 30px;
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=landing-page.css.map */

@@ -56,20 +56,10 @@ $large-screen: 1300px;
 
     };
     @include large-screen-size{
-        
         flex-direction: row;
-
     }
 }
 
-// .row {
-//     display: flex;
-//     flex-direction: column-reverse;
-//     @include tablet-size{
-//         flex-direction: row;
-
-//     };
-// }
 
 .logo-container {
     position: relative;
@@ -79,57 +69,34 @@ $large-screen: 1300px;
         width: 60%;
         height: 100%;
     };
-
     @include large-screen-size{
-        
         width: 60%;
         height: 100%;
-
-
     }
 }
+
 #voting-tool-logo{
     width: 100%;
     margin: auto;
 }
 
 .logo{
-    
-    // background-color: rgba(0, 0, 0, 0.472);
-    // font-weight: 700;
-    // font-size: 150%;
-    // text-align: center;
-    // color: white;
     position: absolute;
-    // font-size: 200%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    // @include small-screen-size{
-    //     font-size: 250%;
-       
-    // };
-
-    // @include large-screen-size{
-    //     font-size: 300%;
-        
-    // }
 }
-.sign-in-panel{
 
+.sign-in-panel{
     width: 100%;
     padding: 0%;
     position: relative;
     background-color: rgba(0, 0, 0, 0.7);
-    
     height: 60%;
-
     @include small-screen-size{
         height: 100%;
         width: 40%;
     };
-
     @include large-screen-size{
         height: 100%;
         width: 40%;
@@ -137,7 +104,6 @@ $large-screen: 1300px;
 }
 
 .sign-in-form {
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -146,19 +112,21 @@ $large-screen: 1300px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 80%;
-    width: 70%;
-    padding: 2.5rem;
+    height: 95%;
+    width: 90%;
+    padding: 1rem;
     margin: auto;
     background-color: rgba(32, 32, 32, 0.7);
     border-radius: 15px;
-    
     @include small-screen-size{
         height: 60%;
+        width: 70%;
+        padding: 2.5rem;
     }
-
     @include large-screen-size{
         height: 50%;
+        width: 70%;
+        padding: 2.5rem;
     };
 }
 
@@ -167,10 +135,8 @@ $large-screen: 1300px;
     text-align: center;
     border: none;
     height: 35px;
-    // margin: auto;
     font-size: 0.85rem;
-    width: 70%;
-
+    width: 90%;
     @include small-screen-size{
         height: 40px;
         font-size: 0.9rem;
@@ -178,53 +144,39 @@ $large-screen: 1300px;
     @include large-screen-size{
         height: 50px;
         font-size: 1.2rem;
-
-
     };
-    
 }
 
 .signin-btn, .signup-btn{
-    // height: 35px;
-    width: 50%;
-
-    // @include small-screen-size{
-    //     height: 40px;
-
-    // } 
-    // @include large-screen-size{
-    //     height: 50px;
-    //     // font-size: 1.2rem;
-
-
-    // };   
+    width: 90%;
+    @include small-screen-size{
+    width: 70%;
         
+    }
+    @include large-screen-size{
+    width: 60%;
+       
+    };
 }
+
 .text-over-link{
     color: #CFB55E;
-
     height: 5px;
-    // margin-bottom: 0;
     font-size: 0.9rem;
     @include large-screen-size{
         font-size: 1.2rem;
-
-
     };   
 }
+
 .register-link {
     color: white;
-    
     width: 40%;
     height: 20px;
     text-align: center;
     font-size: 0.9rem;
     @include large-screen-size{
         font-size: 1.2rem;
-
-
     };  
-
 }
 
 .register-link:link {
@@ -265,13 +217,11 @@ $large-screen: 1300px;
     border-radius: 12px;
     border: none;
     display: none;
-    
     @include large-screen-size{
         left: 30%;
         right: 30%;
-
     };  
-
+}
     
     .signup-flex-wrapper{
         height: 100%;
@@ -279,18 +229,12 @@ $large-screen: 1300px;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-
         align-items: center;
         @include small-screen-size{
             flex-direction: row;
-
-    
         };  
         @include large-screen-size{
             flex-direction: row;
-
-
-    
         };  
     }
 
@@ -308,35 +252,30 @@ $large-screen: 1300px;
         @include small-screen-size{
             width: 70%;
             font-size: 1rem;
-    
         };  
         @include large-screen-size{
             width: 70%;
             font-size: 1.1rem;
-
-    
         };  
     }
+
     .user, .artist {
         display: inline;
-
     }
 
     .signup-par{
         margin-top: 1rem;;
     }
+
     .radio {
         font-size: 0.9rem;
         color:rgb(157, 161, 172);
 
         @include small-screen-size{
             font-size: 1rem;
-    
         };  
         @include large-screen-size{
             font-size: 1.1rem;
-
-    
         };  
     }
     
@@ -348,15 +287,11 @@ $large-screen: 1300px;
         @include small-screen-size{
             width: 40%;
             font-size: 0.9rem;
-    
         };  
         @include large-screen-size{
             width: 40%;
             font-size: 1.1rem;
-
-    
         };  
-
     }
 
     .signup-panel{
@@ -374,11 +309,8 @@ $large-screen: 1300px;
     
         };  
         @include large-screen-size{
-
             width: 50%;
             font-size: 1.1rem;
-
-    
         };  
     }
 
@@ -389,18 +321,12 @@ $large-screen: 1300px;
         align-items: flex-start;
         // background-color: fuchsia;  
         @include small-screen-size{
-
             width: 50%;
-    
         };  
         @include large-screen-size{
-
             width: 50%;
             font-size: 1.1rem;
-
-    
         };  
-
     }
 
     .social-media-btn{
@@ -409,31 +335,21 @@ $large-screen: 1300px;
         text-align: center;
         color: rgb(161, 161, 161);
         padding: 1rem;
-        // padding-left: 0;
-        // margin-right: 2rem;
         text-align: center;
         font-size: 0.9rem;
-        // background-color: lime;  
-
         @include small-screen-size{
             height: 100%;
             margin-right: 3rem;
             font-size: 1rem;
-    
         };  
         @include large-screen-size{
             height: 100%;
-
             margin-right: 4rem;
-
             font-size: 1.1rem;
-
-    
         };  
-
     }
     .social-media-logo{
         vertical-align: middle;  
         width: 30px;  
     }
-  }
+  
