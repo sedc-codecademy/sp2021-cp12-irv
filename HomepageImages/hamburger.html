@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="hamburger.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../Homepagee/indexstyle.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../Homepagee/navbar.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <title>Hamburger menu</title>
+</head>
+<body>
+
+
+<nav>
+    <ul class="menu desktop">
+        <li><a href="" class="menu__item">Home</a></li>
+        <li><a href="" class="menu__item">Artists</a></li>
+        <li><a href="" class="menu__item">Join us</a></li>
+        <li><a href="" class="menu__item">Contact</a></li>
+        <li><a href="" class="menu__item">Log out</a></li>
+    </ul>
+    <a class="menu__icon mobile"><span></span></a>
+    <ul class="menu mobile">
+        <li><a href="" class="menu__item">Home</a></li>
+        <li><a href="" class="menu__item">Artists</a></li>
+        <li><a href="" class="menu__item">Join us</a></li>
+        <li><a href="" class="menu__item">Contact</a></li>
+        <li><a href="" class="menu__item">Log out</a></li>
+    </ul>
+</nav>
+<script>
+$(document).ready(function() {
+    $('.menu__icon mobile').click(function(){
+      $('body').toggleClass('menu_shown');
+    });
+  });
+</script>
+</body>
+</html>

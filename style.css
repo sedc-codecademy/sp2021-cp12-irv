@@ -59,6 +59,28 @@ ul li a:hover::after {
   height: auto;
 }
 */
+* {
+  box-sizing: border-box;
+}
+.painting {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.best-paintings::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .painting {
+    width: 100%;
+  }
+}
+
 
 .text-box {
   width: 90%;
