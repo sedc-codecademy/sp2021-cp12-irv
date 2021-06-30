@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="GeneralStyle/navbar.css">
     <!-- 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> -->
-    <script src="../GeneralScript/loginGuard.js"></script>
+    <!-- <script src="../GeneralScript/loginGuard.js"></script> -->
 
     <title>Home</title>
 </head>
@@ -35,17 +35,49 @@
             </ul>
         </div>
     </header>  -->
+    <div class="flex-menu" id="menuNav">
 
+        <!-- ORIGINAL JANA NAVBAR -->
+        <div class="navbar">
+          <div class="logo-container">
+            <div class="logo">
+              <img src="HomepageImages/sssss.png" alt="voting-tool-logo" id="voting-tool-logo">
+            </div>
+          </div>
+          <!-- <div class="artist-profile">My Profile</div> -->
+          <div id="dropdownMenuBtn">
+            <div class="menu-btn">
+              <div class="menu-btn__burger"></div>
+            </div>
+          </div>
+          <div class="menu">
+            <div><a href="#" class="inactive">Home</a></div>
+            <div id="profileDiv"><a href="#" id="profileButton">Profile</a></div>
+            <div id="artists"><a href="Artists Page/Index.html">Artists</a></div>
+            <div id="joinUsDiv"><a href="Landing Page/index.html">Join Us</a></div>
+            <div id="contact"><a href="Contact Page/index.html">Contact</a></div>
+            <div id="logOutDiv"><a href="#" id="logOutButton">Log out</a></div>
+          </div>
+        </div>
+  
+        <div class="dropdown-menu" id="dropdownMenu">
+          <div class="dropdown-menu-item" id="profileDivDropdown"><a href="#" id="profileButtonDropdown">Profile</a></div>
+          <div class="dropdown-menu-item" id="artistsDropdown"><a href="Artists Page/Index.html">Artists</a></div>
+          <div class="dropdown-menu-item" id="joinUsDivDropdown"><a href="Landing Page/index.html">Join Us</a></div>
+          <div class="dropdown-menu-item" id="contactDropdown"><a href="Contact Page/index.html">Contact</a></div>
+          <div class="dropdown-menu-item" id="logOutDivDropdown"><a href="#" id="logOutButtonDropdown">Log out</a></div>
+        </div>
+  
+  
+    </div>
 
-    <nav>
+    <!-- <nav>
         <div id="navItemsContainer">
             <div id="navLogoContainer">
-                
                 <a href="../Homepage.html">
-                    <img src="HomepageImages/NEW-logo-InRoomPreview-white.png" width="100px"
+                    <img src="../HomepageImages/NEW-logo-InRoomPreview-white.png" width="100px"
                         alt="logo of in room preview">
                 </a>
-               
             </div>
             <div id="navOptionsContainer">
                 <div id="home" class="nav-options-container-item">
@@ -74,19 +106,8 @@
                 </div>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
-    <section class="best-paintings" >
-        <div class="painting">
-            <img src="HomepageImages/painting1.jpg"/>
-        </div>
-        <div class="painting">
-            <img src="HomepageImages/painting2.jpg"/>
-        </div>
-        <div class="painting">
-            <img src="HomepageImages/painting3.jpg"/>
-        </div>
-    </section>
 
     <div class="text-box">
         <h1>Welcome</h1>

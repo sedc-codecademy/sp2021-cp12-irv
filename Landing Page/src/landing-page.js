@@ -176,11 +176,14 @@ signUpBtn.addEventListener("click", function(){
 
 //admin test sign in test
 signInBtn.addEventListener('click',()=>{       
-    if(sessionStorage.getItem('loggedIn') == 'true'){
-        alert('Please logout first');
-        return;
-    }
+    // if(sessionStorage.getItem('loggedIn') == 'true'){
+    //     alert('Please logout first');
+    //     return;
+    // }
 
+    sessionStorage.setItem('loggedIn', 'false');
+    sessionStorage.setItem('credentials', 'none');
+    
     if(userNameInput.value == "admin" && passwordInput.value == "admin"){
         sessionStorage.setItem('loggedIn', 'true');
         sessionStorage.setItem('credentials', 'admin');
