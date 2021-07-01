@@ -108,11 +108,32 @@
         </div>
     </nav> -->
 
+    <section class="best-paintings" >
+        <div class="painting">
+            <img src="HomepageImages/painting1.jpg"/>
+            <button id="clickme">Vote: 0</button>
+        </div>
+        <div class="painting">
+            <img src="HomepageImages/painting2.jpg"/>
+            <button id="clickme">Vote: 0</button>
+        </div>
+        <div class="painting">
+            <img src="HomepageImages/painting3.jpg"/>
+            <button id="clickme">Vote: 0</button>
+        </div>
+    </section>
 
     <div class="text-box">
         <h1>Welcome</h1>
     </div>
-
+    <script>
+    var button = document.getElementById("clickme"),
+    count = 0;
+    button.onclick = function() {
+    count += 1;
+    button.innerHTML = "Vote: " + count;
+};
+    </script>
 <script src="./GeneralScript/navbar.js"></script>
 </body>
 
