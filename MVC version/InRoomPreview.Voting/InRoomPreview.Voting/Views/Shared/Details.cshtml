@@ -1,0 +1,19 @@
+@model Artist
+
+<h2>Id: @model.Id</h2>
+<h4>FirstName: @model.FirstName</h4>
+<h4>LastName: @model.LastName</h4>
+<h4>ImageTitle: @model.ImageTitle</h4>
+<h4>Paintings: @model.Paintings</h4>
+
+@model ArtistWorks
+
+<h2>WorkId: @model.WorkId</h2>
+<h4>WorkTitle: @model.WorkTitle</h4>
+<h4>PaintingsMade: @model.PaintingsMade</h4>
+
+@model ArtistProjects
+
+<h2>ProjectId: @model.ProjectId</h2>
+<h4>WorkProjects: @model.WorkProjects:</h4>
+<h4>ProjectsMade: @model.ProjectsMade</h4>
